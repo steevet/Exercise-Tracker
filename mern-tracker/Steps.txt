@@ -1,0 +1,14 @@
+Check node version
+npx create-react-app 'Name' to ceate the react project
+Enter that folder then create a 'Backend' folder
+Inside the backend forlder create a package.json file ' npm init -y  '
+Now want to install some dependencies 'npm install express cors mongoose dotenv'
+Express: is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License.
+Cors: cross origin resource sharing, is a mechanism that allows a web page to access restricted resources from a server on a domain different than the domain that served the web page. 
+Mongoose: Mongoose is a JavaScript object-oriented programming library that creates a connection between MongoDB and the Node.js JavaScript runtime environment.
+Dotenv: Loads envirement variables from a .env file into process.env, this makes developement simpler.
+Then, do 'npm install -g nodemon'. nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected. 
+This will cause an ERROR because if a global install 
+Whenenver we weant to install somethoing globally we have to use Sudo 'sudo install -g nodemon'. This will ask for ur password.
+Then create server.js file in backend
+Once done, run 'nodemon server' in the terminal. We would then see that out server is runnign on port 5000
