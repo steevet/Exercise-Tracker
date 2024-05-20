@@ -11,4 +11,9 @@ Then, do 'npm install -g nodemon'. nodemon is a tool that helps develop Node.js 
 This will cause an ERROR because if a global install 
 Whenenver we weant to install somethoing globally we have to use Sudo 'sudo install -g nodemon'. This will ask for ur password.
 Then create server.js file in backend
-Once done, run 'nodemon server' in the terminal. We would then see that out server is runnign on port 5000
+Once done, run 'nodemon server' in the terminal. We would then see that out server is runnign on port 4000
+.
+.
+.
+.
+Create a folder inside backend called 'models' 
