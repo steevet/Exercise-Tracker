@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // "npm install react-router-dom" in terminal in main folder so 'Exercise-Tracker'
 // This will make it easier to route differnet URLs to different react components
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 
 // Name of different compoents and where they are located
 // "components" folder created, inside 'src'
@@ -16,15 +16,20 @@ import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 
-function App() {
+// We will be making a Router element
+// We will be creating all these components
+const App = () => {
   return (
+    // <div className='App'>
+    //   Hello World!
+    // </div>
     <Router>
-      <Navbar />
-      <br/>
-      <Route path="/" exact component={ExercisesList} /> 
-      <Route path="/edit/:id" component={EditExercise} /> 
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
+        <Navbar />
+        <br />
+        <Route path="/" element={<ExercisesList />} /> 
+        <Route path="/edit/:id" element={<EditExercise />} /> 
+        <Route path="/create" element={<CreateExercise />} />
+        <Route path="/user" element={<CreateUser />} />
     </Router>
   );
 }
